@@ -1,10 +1,10 @@
 let pola = ""; 
 
-for (let i = 1; i <= 5; i++) {          // loop baris
-  for (let j = 1; j <= i; j++) {        // loop kolom
-    pola += "*";                        // tambahkan bintang
+for (let i = 1; i <= 5; i++) { 
+  for (let j = 1; j <= i; j++) {
+    pola += "*"; 
   }
-  pola += "\n";                         // pindah ke baris berikutnya
+  pola += "\n";
 }
 
 console.log(pola);
