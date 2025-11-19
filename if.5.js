@@ -1,9 +1,9 @@
 let suhu = 28;
 
 if (suhu >= 35) {
-  console.log("Sangat Panas");
+  console.log("Suhu " + suhu + "°C: Sangat Panas");
 } else if (suhu >= 25) {
-  console.log("Panas");
+  console.log("Suhu " + suhu + "°C: Panas");
 } else if (suhu >= 15) {
-  console.log("Hangat");
+  console.log("Suhu " + suhu + "°C: Hangat");
 }
