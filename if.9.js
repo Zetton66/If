@@ -1,8 +1,24 @@
-let angka = 5;
-let faktorial = 1;
+let jenisKendaraan = "mobil";
+let durasi = 3; // jam
 
-for (let i = angka; i >= 1; i--) {
-  faktorial = faktorial * i;
+let tarifPerJam;
+
+if (jenisKendaraan === "motor") {
+  tarifPerJam = 2000;
+} else if (jenisKendaraan === "mobil") {
+  tarifPerJam = 5000;
+} else if (jenisKendaraan === "truk") {
+  tarifPerJam = 10000;
+} else {
+  console.log("Kendaraan tidak diizinkan");
+  tarifPerJam = 0;
 }
 
-console.log("Faktorial dari " + angka + " adalah: " + faktorial);
+let totalBayar = tarifPerJam * durasi;
+
+if (tarifPerJam > 0) {
+  console.log("Jenis kendaraan: " + jenisKendaraan);
+  console.log("Durasi parkir: " + durasi + " jam");
+  console.log("Tarif per jam: Rp " + tarifPerJam);
+  console.log("Total bayar: Rp " + totalBayar);
+}
