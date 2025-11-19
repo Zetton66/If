@@ -1,10 +1,18 @@
-let pola = ""; 
+let berat = 70; // kg
+let tinggi = 1.75; // meter
 
-for (let i = 1; i <= 5; i++) { 
-  for (let j = 1; j <= i; j++) {
-    pola += "*"; 
-  }
-  pola += "\n";
+let bmi = berat / (tinggi * tinggi);
+let kategori = "";
+
+if (bmi < 18.5) {
+  kategori = "Underweight";
+} else if (bmi < 25) {
+  kategori = "Normal";
+} else if (bmi < 30) {
+  kategori = "Overweight";
+} else {
+  kategori = "Obese";
 }
 
-console.log(pola);
+console.log("BMI",bmi.toFixed(2))
+console.log("Kategori: ",kategori)
