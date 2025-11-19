@@ -1,18 +1,17 @@
-let kata = "programming";
-let jumlahVokal = 0;
+let skor = 85;
+let grade;
 
-for (let i = 0; i < kata.length; i++) {
-  let huruf = kata.charAt(i);
-
-  if (
-    huruf === "a" ||
-    huruf === "i" ||
-    huruf === "u" ||
-    huruf === "e" ||
-    huruf === "o"
-  ) {
-    jumlahVokal++;
-  }
+if (skor >= 90) {
+  grade = "A";
+} else if (skor >= 80) {
+  grade = "B";
+} else if (skor >= 70) {
+  grade = "C";
+} else if (skor >= 60) {
+  grade = "D";
+} else {
+  grade = "E";
 }
 
-console.log("Jumlah vokal: " + jumlahVokal);
+console.log("Skor: " + skor);
+console.log("Grade: " + grade);
