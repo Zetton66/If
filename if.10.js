@@ -20,6 +20,13 @@ if (operator === "+") {
 } else {
   console.log("Operator tidak valid");
   hasil = null;
+<<<<<<< HEAD
+=======
+}
+
+if (hasil !== null) {
+  console.log(angka1 + " " + operator + " " + angka2 + " = " + hasil.toFixed(2));
+>>>>>>> 8f8995d3fe3a06225210f4a611a81801e02c706f
 }
 
 if (hasil !== null) {

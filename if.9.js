@@ -21,4 +21,8 @@ if (tarifPerJam > 0) {
   console.log("Durasi parkir: " + durasi + " jam");
   console.log("Tarif per jam: Rp " + tarifPerJam);
   console.log("Total bayar: Rp " + totalBayar);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8f8995d3fe3a06225210f4a611a81801e02c706f
